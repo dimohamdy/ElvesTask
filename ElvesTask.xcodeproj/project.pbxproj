@@ -14,6 +14,9 @@
 		3DE39426219B5D8F00124B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE39424219B5D8F00124B07 /* LaunchScreen.storyboard */; };
 		3DE39431219B5D8F00124B07 /* ElvesTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE39430219B5D8F00124B07 /* ElvesTaskTests.swift */; };
 		3DE3943C219B5D8F00124B07 /* ElvesTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3943B219B5D8F00124B07 /* ElvesTaskUITests.swift */; };
+		49ADF78745E0C7248370B9C4 /* Pods_ElvesTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8810073EA66CE6A714F6D79D /* Pods_ElvesTaskUITests.framework */; };
+		A3D6AA71E9E402CB88674B77 /* Pods_ElvesTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D6AD09E723BD951C87D91E /* Pods_ElvesTask.framework */; };
+		DD87376D09A41390C57D6907 /* Pods_ElvesTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AECBAA39018955511A6A012 /* Pods_ElvesTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		374BD335F0A7974B3D16E0A1 /* Pods-ElvesTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTaskTests/Pods-ElvesTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3DE39418219B5D8D00124B07 /* ElvesTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElvesTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE3941B219B5D8D00124B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE3941D219B5D8D00124B07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		3DE39437219B5D8F00124B07 /* ElvesTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElvesTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE3943B219B5D8F00124B07 /* ElvesTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElvesTaskUITests.swift; sourceTree = "<group>"; };
 		3DE3943D219B5D8F00124B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D963A4825E94FC5B9D4A3D5 /* Pods-ElvesTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTaskUITests/Pods-ElvesTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7FA973B8BDDA271A848968C2 /* Pods-ElvesTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTask/Pods-ElvesTask.debug.xcconfig"; sourceTree = "<group>"; };
+		8810073EA66CE6A714F6D79D /* Pods_ElvesTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElvesTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AECBAA39018955511A6A012 /* Pods_ElvesTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElvesTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA273E0A377D38044DB8723 /* Pods-ElvesTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTaskTests/Pods-ElvesTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7CAA4E2FC20EB127DC480B6 /* Pods-ElvesTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTaskUITests/Pods-ElvesTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9D6AD09E723BD951C87D91E /* Pods_ElvesTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElvesTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B548DBF31805EF90784989 /* Pods-ElvesTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTask/Pods-ElvesTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D6AA71E9E402CB88674B77 /* Pods_ElvesTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD87376D09A41390C57D6907 /* Pods_ElvesTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49ADF78745E0C7248370B9C4 /* Pods_ElvesTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				3DE3942F219B5D8F00124B07 /* ElvesTaskTests */,
 				3DE3943A219B5D8F00124B07 /* ElvesTaskUITests */,
 				3DE39419219B5D8D00124B07 /* Products */,
+				AA17808589551D394B4E273F /* Pods */,
+				EC89A28052FA754F85D0E16E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = ElvesTaskUITests;
 			sourceTree = "<group>";
 		};
+		AA17808589551D394B4E273F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FA973B8BDDA271A848968C2 /* Pods-ElvesTask.debug.xcconfig */,
+				F0B548DBF31805EF90784989 /* Pods-ElvesTask.release.xcconfig */,
+				374BD335F0A7974B3D16E0A1 /* Pods-ElvesTaskTests.debug.xcconfig */,
+				ABA273E0A377D38044DB8723 /* Pods-ElvesTaskTests.release.xcconfig */,
+				C7CAA4E2FC20EB127DC480B6 /* Pods-ElvesTaskUITests.debug.xcconfig */,
+				7D963A4825E94FC5B9D4A3D5 /* Pods-ElvesTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC89A28052FA754F85D0E16E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9D6AD09E723BD951C87D91E /* Pods_ElvesTask.framework */,
+				8AECBAA39018955511A6A012 /* Pods_ElvesTaskTests.framework */,
+				8810073EA66CE6A714F6D79D /* Pods_ElvesTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DE39440219B5D8F00124B07 /* Build configuration list for PBXNativeTarget "ElvesTask" */;
 			buildPhases = (
+				A992E6472B3C1F631382DF27 /* [CP] Check Pods Manifest.lock */,
 				3DE39414219B5D8D00124B07 /* Sources */,
 				3DE39415219B5D8D00124B07 /* Frameworks */,
 				3DE39416219B5D8D00124B07 /* Resources */,
+				F63B69A4034ED82E3DB5C66E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DE39443219B5D8F00124B07 /* Build configuration list for PBXNativeTarget "ElvesTaskTests" */;
 			buildPhases = (
+				565A44C43D1DDCD388705AD1 /* [CP] Check Pods Manifest.lock */,
 				3DE39428219B5D8F00124B07 /* Sources */,
 				3DE39429219B5D8F00124B07 /* Frameworks */,
 				3DE3942A219B5D8F00124B07 /* Resources */,
@@ -167,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DE39446219B5D8F00124B07 /* Build configuration list for PBXNativeTarget "ElvesTaskUITests" */;
 			buildPhases = (
+				11856A0E60F3D4523F498F72 /* [CP] Check Pods Manifest.lock */,
 				3DE39433219B5D8F00124B07 /* Sources */,
 				3DE39434219B5D8F00124B07 /* Frameworks */,
 				3DE39435219B5D8F00124B07 /* Resources */,
+				C2C4746ED9B588F67C6DC629 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +295,123 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11856A0E60F3D4523F498F72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElvesTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		565A44C43D1DDCD388705AD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElvesTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A992E6472B3C1F631382DF27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElvesTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C4746ED9B588F67C6DC629 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ElvesTaskUITests/Pods-ElvesTaskUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElvesTaskUITests/Pods-ElvesTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F63B69A4034ED82E3DB5C66E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ElvesTask/Pods-ElvesTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ALCameraViewController/ALCameraViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleImageViewer/SimpleImageViewer.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALCameraViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleImageViewer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElvesTask/Pods-ElvesTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DE39414219B5D8D00124B07 /* Sources */ = {
@@ -430,15 +592,13 @@
 		};
 		3DE39441219B5D8F00124B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FA973B8BDDA271A848968C2 /* Pods-ElvesTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QH458A3QD;
 				INFOPLIST_FILE = ElvesTask/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.ElvesTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -448,15 +608,13 @@
 		};
 		3DE39442219B5D8F00124B07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B548DBF31805EF90784989 /* Pods-ElvesTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QH458A3QD;
 				INFOPLIST_FILE = ElvesTask/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.ElvesTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -466,17 +624,14 @@
 		};
 		3DE39444219B5D8F00124B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374BD335F0A7974B3D16E0A1 /* Pods-ElvesTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QH458A3QD;
 				INFOPLIST_FILE = ElvesTaskTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.ElvesTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -487,17 +642,14 @@
 		};
 		3DE39445219B5D8F00124B07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABA273E0A377D38044DB8723 /* Pods-ElvesTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QH458A3QD;
 				INFOPLIST_FILE = ElvesTaskTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.ElvesTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -508,16 +660,13 @@
 		};
 		3DE39447219B5D8F00124B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7CAA4E2FC20EB127DC480B6 /* Pods-ElvesTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QH458A3QD;
 				INFOPLIST_FILE = ElvesTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.ElvesTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -528,16 +677,13 @@
 		};
 		3DE39448219B5D8F00124B07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D963A4825E94FC5B9D4A3D5 /* Pods-ElvesTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QH458A3QD;
 				INFOPLIST_FILE = ElvesTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.ElvesTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
