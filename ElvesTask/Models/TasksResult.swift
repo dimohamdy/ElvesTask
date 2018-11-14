@@ -1,5 +1,5 @@
 //
-//	RootClass.swift
+//	TasksResult.swift
 //
 //	Create by Ahmed Tawfik on 14/11/2018
 //	Copyright © 2018. All rights reserved.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RootClass : Codable {
+struct TasksResult : Codable {
 
 	let date : String?
 	let tasks : [Task]?
