@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D82BC31219BCE2100300299 /* TasksResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82BC2F219BCE2100300299 /* TasksResult.swift */; };
+		3D82BC32219BCE2100300299 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82BC30219BCE2100300299 /* Task.swift */; };
+		3D82BC34219C6D0F00300299 /* TasksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82BC33219C6D0F00300299 /* TasksManager.swift */; };
+		3D82BC3B219CAAC000300299 /* SF-UI-Text-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D82BC36219CAA1700300299 /* SF-UI-Text-Medium.ttf */; };
+		3D82BC3C219CAAC000300299 /* SF-UI-Text-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D82BC37219CAA1700300299 /* SF-UI-Text-Semibold.ttf */; };
+		3D82BC3D219CAAC000300299 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D82BC3A219CAA9500300299 /* SFUIText-Regular.ttf */; };
+		3D82BC3E219CAAC000300299 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D82BC38219CAA1700300299 /* SFUIText-Bold.ttf */; };
+		3D82BC41219CD2B700300299 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82BC40219CD2B700300299 /* TaskCell.swift */; };
+		3D82BC43219CD2C800300299 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82BC42219CD2C800300299 /* HeaderCell.swift */; };
+		3D82BC46219CD32000300299 /* ReusableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82BC45219CD32000300299 /* ReusableCellView.swift */; };
+		3DBB5910219DF10C003CEA9E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB590F219DF10C003CEA9E /* Alert.swift */; };
+		3DBB5912219E79AB003CEA9E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB5911219E79AB003CEA9E /* BaseViewController.swift */; };
+		3DD5219C219FABA700C09CCF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5219B219FABA700C09CCF /* UIImageViewExtension.swift */; };
 		3DE3941C219B5D8D00124B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3941B219B5D8D00124B07 /* AppDelegate.swift */; };
-		3DE3941E219B5D8D00124B07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3941D219B5D8D00124B07 /* ViewController.swift */; };
 		3DE39421219B5D8D00124B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE3941F219B5D8D00124B07 /* Main.storyboard */; };
 		3DE39423219B5D8F00124B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE39422219B5D8F00124B07 /* Assets.xcassets */; };
 		3DE39426219B5D8F00124B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE39424219B5D8F00124B07 /* LaunchScreen.storyboard */; };
@@ -22,6 +34,7 @@
 		3DE39458219B6E1500124B07 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE39454219B6E1500124B07 /* TaskListViewController.swift */; };
 		3DE39459219B6E1500124B07 /* TaskListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE39455219B6E1500124B07 /* TaskListBuilder.swift */; };
 		3DE3945A219B6E1500124B07 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE39456219B6E1500124B07 /* TaskListViewModel.swift */; };
+		3DE3945E219B718700124B07 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3945D219B718700124B07 /* LoginManager.swift */; };
 		49ADF78745E0C7248370B9C4 /* Pods_ElvesTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8810073EA66CE6A714F6D79D /* Pods_ElvesTaskUITests.framework */; };
 		A3D6AA71E9E402CB88674B77 /* Pods_ElvesTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D6AD09E723BD951C87D91E /* Pods_ElvesTask.framework */; };
 		DD87376D09A41390C57D6907 /* Pods_ElvesTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AECBAA39018955511A6A012 /* Pods_ElvesTaskTests.framework */; };
@@ -46,9 +59,21 @@
 
 /* Begin PBXFileReference section */
 		374BD335F0A7974B3D16E0A1 /* Pods-ElvesTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTaskTests/Pods-ElvesTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D82BC2F219BCE2100300299 /* TasksResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksResult.swift; sourceTree = "<group>"; };
+		3D82BC30219BCE2100300299 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3D82BC33219C6D0F00300299 /* TasksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksManager.swift; sourceTree = "<group>"; };
+		3D82BC36219CAA1700300299 /* SF-UI-Text-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Medium.ttf"; sourceTree = "<group>"; };
+		3D82BC37219CAA1700300299 /* SF-UI-Text-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Semibold.ttf"; sourceTree = "<group>"; };
+		3D82BC38219CAA1700300299 /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
+		3D82BC3A219CAA9500300299 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		3D82BC40219CD2B700300299 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		3D82BC42219CD2C800300299 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		3D82BC45219CD32000300299 /* ReusableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellView.swift; sourceTree = "<group>"; };
+		3DBB590F219DF10C003CEA9E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		3DBB5911219E79AB003CEA9E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3DD5219B219FABA700C09CCF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3DE39418219B5D8D00124B07 /* ElvesTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElvesTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE3941B219B5D8D00124B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DE3941D219B5D8D00124B07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DE39420219B5D8D00124B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DE39422219B5D8F00124B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE39425219B5D8F00124B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +92,7 @@
 		3DE39454219B6E1500124B07 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		3DE39455219B6E1500124B07 /* TaskListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListBuilder.swift; sourceTree = "<group>"; };
 		3DE39456219B6E1500124B07 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		3DE3945D219B718700124B07 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		7D963A4825E94FC5B9D4A3D5 /* Pods-ElvesTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTaskUITests/Pods-ElvesTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7FA973B8BDDA271A848968C2 /* Pods-ElvesTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElvesTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElvesTask/Pods-ElvesTask.debug.xcconfig"; sourceTree = "<group>"; };
 		8810073EA66CE6A714F6D79D /* Pods_ElvesTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElvesTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +131,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D82BC2E219BCE2100300299 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D82BC2F219BCE2100300299 /* TasksResult.swift */,
+				3D82BC30219BCE2100300299 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D82BC35219CA9F200300299 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3D82BC36219CAA1700300299 /* SF-UI-Text-Medium.ttf */,
+				3D82BC37219CAA1700300299 /* SF-UI-Text-Semibold.ttf */,
+				3D82BC3A219CAA9500300299 /* SFUIText-Regular.ttf */,
+				3D82BC38219CAA1700300299 /* SFUIText-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3D82BC3F219CD05100300299 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D82BC40219CD2B700300299 /* TaskCell.swift */,
+				3D82BC42219CD2C800300299 /* HeaderCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3D82BC44219CD31200300299 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D82BC45219CD32000300299 /* ReusableCellView.swift */,
+				3DBB590F219DF10C003CEA9E /* Alert.swift */,
+				3DD5219B219FABA700C09CCF /* UIImageViewExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		3DE3940F219B5D8D00124B07 = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +195,11 @@
 		3DE3941A219B5D8D00124B07 /* ElvesTask */ = {
 			isa = PBXGroup;
 			children = (
+				3D82BC44219CD31200300299 /* Common */,
+				3D82BC35219CA9F200300299 /* Fonts */,
+				3D82BC2E219BCE2100300299 /* Models */,
+				3DE3945C219B713000124B07 /* Manager */,
 				3DE3941B219B5D8D00124B07 /* AppDelegate.swift */,
-				3DE3941D219B5D8D00124B07 /* ViewController.swift */,
 				3DE3941F219B5D8D00124B07 /* Main.storyboard */,
 				3DE39422219B5D8F00124B07 /* Assets.xcassets */,
 				3DE39424219B5D8F00124B07 /* LaunchScreen.storyboard */,
@@ -164,6 +232,7 @@
 			children = (
 				3DE39452219B6D2A00124B07 /* Login */,
 				3DE3945B219B6FE000124B07 /* TaskList */,
+				3DBB5911219E79AB003CEA9E /* BaseViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -182,12 +251,22 @@
 		3DE3945B219B6FE000124B07 /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
+				3D82BC3F219CD05100300299 /* Cell */,
 				3DE39453219B6E1500124B07 /* TaskListRouter.swift */,
 				3DE39454219B6E1500124B07 /* TaskListViewController.swift */,
 				3DE39455219B6E1500124B07 /* TaskListBuilder.swift */,
 				3DE39456219B6E1500124B07 /* TaskListViewModel.swift */,
 			);
 			path = TaskList;
+			sourceTree = "<group>";
+		};
+		3DE3945C219B713000124B07 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3DE3945D219B718700124B07 /* LoginManager.swift */,
+				3D82BC33219C6D0F00300299 /* TasksManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		AA17808589551D394B4E273F /* Pods */ = {
@@ -322,9 +401,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D82BC3E219CAAC000300299 /* SFUIText-Bold.ttf in Resources */,
 				3DE39426219B5D8F00124B07 /* LaunchScreen.storyboard in Resources */,
+				3D82BC3B219CAAC000300299 /* SF-UI-Text-Medium.ttf in Resources */,
 				3DE39423219B5D8F00124B07 /* Assets.xcassets in Resources */,
+				3D82BC3D219CAAC000300299 /* SFUIText-Regular.ttf in Resources */,
 				3DE39421219B5D8D00124B07 /* Main.storyboard in Resources */,
+				3D82BC3C219CAAC000300299 /* SF-UI-Text-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,32 +509,38 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ElvesTask/Pods-ElvesTask-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ALCameraViewController/ALCameraViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SimpleImageViewer/SimpleImageViewer.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALCameraViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleImageViewer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,11 +556,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE3944E219B6D0900124B07 /* LoginViewController.swift in Sources */,
-				3DE3941E219B5D8D00124B07 /* ViewController.swift in Sources */,
+				3D82BC43219CD2C800300299 /* HeaderCell.swift in Sources */,
+				3D82BC34219C6D0F00300299 /* TasksManager.swift in Sources */,
+				3DBB5910219DF10C003CEA9E /* Alert.swift in Sources */,
 				3DE39450219B6D0900124B07 /* LoginViewModel.swift in Sources */,
+				3DBB5912219E79AB003CEA9E /* BaseViewController.swift in Sources */,
 				3DE3944F219B6D0900124B07 /* LoginBuilder.swift in Sources */,
+				3D82BC46219CD32000300299 /* ReusableCellView.swift in Sources */,
+				3D82BC31219BCE2100300299 /* TasksResult.swift in Sources */,
+				3D82BC32219BCE2100300299 /* Task.swift in Sources */,
 				3DE3941C219B5D8D00124B07 /* AppDelegate.swift in Sources */,
 				3DE39459219B6E1500124B07 /* TaskListBuilder.swift in Sources */,
+				3D82BC41219CD2B700300299 /* TaskCell.swift in Sources */,
+				3DD5219C219FABA700C09CCF /* UIImageViewExtension.swift in Sources */,
+				3DE3945E219B718700124B07 /* LoginManager.swift in Sources */,
 				3DE39458219B6E1500124B07 /* TaskListViewController.swift in Sources */,
 				3DE3945A219B6E1500124B07 /* TaskListViewModel.swift in Sources */,
 				3DE3944D219B6D0900124B07 /* LoginRouter.swift in Sources */,
