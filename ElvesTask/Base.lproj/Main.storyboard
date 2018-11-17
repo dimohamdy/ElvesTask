@@ -31,7 +31,38 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5G-O6-kxh">
+                                <rect key="frame" x="39" y="313.5" width="297" height="60"/>
+                                <state key="normal" backgroundImage="fbLogin"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="472-ul-fhc">
+                                <rect key="frame" x="39" y="408.5" width="297" height="60"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.19607843137254902" blue="0.28235294117647058" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.10980392160000001" green="0.1960784314" blue="0.28235294119999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="472-ul-fhc" firstAttribute="width" secondItem="j5G-O6-kxh" secondAttribute="width" id="2DE-m3-chQ"/>
+                            <constraint firstItem="472-ul-fhc" firstAttribute="top" secondItem="j5G-O6-kxh" secondAttribute="bottom" constant="35" id="671-qd-TC8"/>
+                            <constraint firstItem="472-ul-fhc" firstAttribute="centerX" secondItem="j5G-O6-kxh" secondAttribute="centerX" id="C1D-q1-F53"/>
+                            <constraint firstItem="j5G-O6-kxh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="XRo-t8-lvj"/>
+                            <constraint firstItem="j5G-O6-kxh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="clV-wf-hRA"/>
+                            <constraint firstItem="472-ul-fhc" firstAttribute="height" secondItem="j5G-O6-kxh" secondAttribute="height" id="n3g-mX-1S4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -222,5 +253,6 @@
     </scenes>
     <resources>
         <image name="Screen" width="345" height="210"/>
+        <image name="fbLogin" width="297" height="60"/>
     </resources>
 </document>
