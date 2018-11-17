@@ -19,10 +19,19 @@ final class TasksManagerClient {
     enum FailureReason: Int, Error {
         case unAuthorized = 401
         case notFound = 404
+        
+        var localizedDescription: String? {
+            switch self {
+            case .unAuthorized:
+                return "بإمكانك الدخول باسم المستخدم بدلاً من فيسبوك😎"
+            case .notFound:
+                return "عفواً يرجى إدخال جميع المعلومات"
+            }
+        }
     }
  
     
-    static func getTasks() -> Observable<TasksResult> {
+    static func getTasks() -> Observable<[TasksResult]> {
         return Observable.create { observer -> Disposable in
             Alamofire.request("https://private-anon-d76fb8268d-elves.apiary-mock.com/tasks")
                 .validate()
@@ -36,7 +45,7 @@ final class TasksManagerClient {
                             return
                         }
                         do {
-                            let tasksResult = try JSONDecoder().decode(TasksResult.self, from: data)
+                            let tasksResult = try JSONDecoder().decode([TasksResult].self, from: data)
                             observer.onNext(tasksResult)
                         } catch {
                             observer.onError(error)
