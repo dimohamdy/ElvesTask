@@ -13,7 +13,7 @@ import RxSwift
 import Alamofire
 
 // MARK: - AppServerClient
-final class TasksManagerAppServerClient {
+final class TasksManagerClient {
     
     // MARK: - GetFriends
     enum FailureReason: Int, Error {
