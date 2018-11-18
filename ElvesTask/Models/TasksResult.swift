@@ -10,7 +10,7 @@ import Foundation
 struct TasksResult : Codable {
 
 	let date : String?
-	let tasks : [Task]?
+	var tasks : [Task]?
 
 
 	enum CodingKeys: String, CodingKey {

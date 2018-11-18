@@ -63,5 +63,46 @@ final class TasksManagerClient {
             return Disposables.create()
         }
     }
+    
+    static func compelteTask(taskId:Int) -> Observable<Bool> {
+        return Observable.create { observer -> Disposable in
+            
+            Alamofire.request("https://private-anon-d76fb8268d-elves.apiary-mock.com/tasks/\(taskId)", method: .put)
+                .validate()
+                .responseJSON { response in
+                    switch response.result {
+                    case .success:
+                        guard let data = response.data else {
+                            // if no error provided by alamofire return .notFound error instead.
+                            // .notFound should never happen here?
+                            observer.onError(response.error ?? FailureReason.notFound)
+                            return
+                        }
+                        do {
+                            let json = try JSONSerialization.jsonObject(with: data) as? [String: Bool]
+                            
+                            if json?["completed"] == true{
+                                observer.onNext(true)
+                            }else{
+                                observer.onNext(true)
+                                
+                            }
+                            
+                        } catch {
+                            observer.onError(error)
+                        }
+                    case .failure(let error):
+                        if let statusCode = response.response?.statusCode,
+                            let reason = FailureReason(rawValue: statusCode)
+                        {
+                            observer.onError(reason)
+                        }
+                        observer.onError(error)
+                    }
+            }
+            
+            return Disposables.create()
+        }
+    }
 }
 

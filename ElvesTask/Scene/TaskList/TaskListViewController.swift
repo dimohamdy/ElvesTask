@@ -38,7 +38,7 @@ class TaskListViewController: BaseViewController {
     override func setupRx(viewModel: BaseViewModel){
         super.setupRx(viewModel: viewModel)
         
-        self.viewModel.tasksCells.bind(to: self.taskTableView.rx.items) { tableView, index, element in
+        self.viewModel.tasksCells.bind(to: self.taskTableView.rx.items) { [weak self] tableView, index, element in
             let indexPath = IndexPath(item: index, section: 0)
             switch element {
                 
@@ -47,6 +47,7 @@ class TaskListViewController: BaseViewController {
                     return UITableViewCell()
                 }
                 cell.task = cellViewModel
+                cell.viewModel = self?.viewModel
                 return cell
             case .header(let title):
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCell.id, for: indexPath) as? HeaderCell else {

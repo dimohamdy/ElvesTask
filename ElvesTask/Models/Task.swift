@@ -10,7 +10,7 @@ import Foundation
 struct Task : Codable {
 
 	let body : String?
-	let completed : Bool?
+	var completed : Bool?
 	let id : Int?
 	let imgUrl : String?
 	let title : String?

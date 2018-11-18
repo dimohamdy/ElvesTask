@@ -16,7 +16,8 @@ class TaskCell: UITableViewCell,ReusableCellView {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var taskImageView: UIImageView!
     @IBOutlet weak var stateView: UIView!
-    
+    weak var viewModel: TaskListViewModel?
+
     var task:Task? = nil {
         didSet {
             guard let task = task else {
@@ -33,7 +34,13 @@ class TaskCell: UITableViewCell,ReusableCellView {
         }
         
     }
-
+    @IBAction func completeTask(_ sender: UIButton) {
+        guard let id = task?.id else {
+            return
+        }
+        viewModel?.compeleteTask(id: id)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

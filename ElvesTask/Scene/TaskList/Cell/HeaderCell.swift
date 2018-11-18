@@ -13,7 +13,7 @@ class HeaderCell: UITableViewCell ,ReusableCellView {
     
     @IBOutlet weak var dayNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    
+
     var title:String? = nil {
         didSet {
             guard let string = title ,let date = convertToString(date: string) else {
