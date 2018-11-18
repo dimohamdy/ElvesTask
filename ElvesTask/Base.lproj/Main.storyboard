@@ -27,7 +27,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ElvesTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="ElvesTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,9 +35,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5G-O6-kxh">
                                 <rect key="frame" x="39" y="313.5" width="297" height="60"/>
                                 <state key="normal" backgroundImage="fbLogin"/>
+                                <connections>
+                                    <action selector="loginWithFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1XF-9E-hgq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="472-ul-fhc">
-                                <rect key="frame" x="39" y="408.5" width="297" height="60"/>
+                                <rect key="frame" x="39" y="408.5" width="297" height="60.5"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="0.10980392156862745" green="0.19607843137254902" blue="0.28235294117647058" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 </state>
@@ -53,35 +56,75 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-kD-Wra">
+                                <rect key="frame" x="157" y="153.5" width="61" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3eg-Jc-vIP"/>
+                                    <constraint firstAttribute="width" constant="61" id="gpe-zl-ejz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1F-g9-iPN">
+                                <rect key="frame" x="92.5" y="515" width="190" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6d0-Ru-QHh"/>
+                                </constraints>
+                                <string key="text">DON’T HAVE AN ACCOUNT?
+</string>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dg2-f8-0tb">
+                                <rect key="frame" x="155.5" y="544" width="64" height="48"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="15"/>
+                                <state key="normal">
+                                    <string key="title">SIGN UP
+</string>
+                                    <color key="titleColor" red="0.10980392156862745" green="0.19607843137254902" blue="0.28235294117647058" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="472-ul-fhc" firstAttribute="width" secondItem="j5G-O6-kxh" secondAttribute="width" id="2DE-m3-chQ"/>
                             <constraint firstItem="472-ul-fhc" firstAttribute="top" secondItem="j5G-O6-kxh" secondAttribute="bottom" constant="35" id="671-qd-TC8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h1F-g9-iPN" secondAttribute="bottom" constant="131" id="6a8-L8-n1i"/>
+                            <constraint firstItem="h1F-g9-iPN" firstAttribute="top" secondItem="472-ul-fhc" secondAttribute="bottom" constant="46" id="8SN-5D-2SL"/>
+                            <constraint firstItem="dg2-f8-0tb" firstAttribute="centerX" secondItem="472-ul-fhc" secondAttribute="centerX" id="8xs-4c-Zff"/>
                             <constraint firstItem="472-ul-fhc" firstAttribute="centerX" secondItem="j5G-O6-kxh" secondAttribute="centerX" id="C1D-q1-F53"/>
                             <constraint firstItem="j5G-O6-kxh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="XRo-t8-lvj"/>
+                            <constraint firstItem="YTJ-kD-Wra" firstAttribute="centerX" secondItem="j5G-O6-kxh" secondAttribute="centerX" id="ZIX-b8-eK0"/>
+                            <constraint firstItem="j5G-O6-kxh" firstAttribute="top" secondItem="YTJ-kD-Wra" secondAttribute="bottom" constant="80" id="cTR-ol-Bm4"/>
                             <constraint firstItem="j5G-O6-kxh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="clV-wf-hRA"/>
+                            <constraint firstItem="dg2-f8-0tb" firstAttribute="top" secondItem="h1F-g9-iPN" secondAttribute="bottom" constant="8" symbolic="YES" id="jyx-lF-E4F"/>
                             <constraint firstItem="472-ul-fhc" firstAttribute="height" secondItem="j5G-O6-kxh" secondAttribute="height" id="n3g-mX-1S4"/>
+                            <constraint firstItem="h1F-g9-iPN" firstAttribute="centerX" secondItem="472-ul-fhc" secondAttribute="centerX" id="nNf-3o-Exp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3nQ-iG-o25"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="2c7-LH-W5M" kind="show" id="l7o-wO-h8r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="554" y="92"/>
         </scene>
         <!--Task List View Controller-->
         <scene sceneID="WAm-Kl-MJQ">
             <objects>
-                <viewController id="2c7-LH-W5M" customClass="TaskListViewController" customModule="ElvesTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaskListViewController" id="2c7-LH-W5M" customClass="TaskListViewController" customModule="ElvesTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BqF-lv-EbH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Cq-V4-FTD">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="300" id="jzp-fY-KzC" customClass="TaskCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="300" id="jzp-fY-KzC" customClass="TaskCell" customModule="ElvesTask" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jzp-fY-KzC" id="xr9-S7-Ob7">
@@ -102,25 +145,25 @@
                                                             <rect key="frame" x="27" y="0.0" width="328" height="299.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jXJ-vW-6jT">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="328" height="76"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="328" height="78"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rbU-m5-yaU">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="248" height="76"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="248" height="78"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project daily stand-up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp3-sg-Su8">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="248" height="20"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="248" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="17"/>
                                                                                     <color key="textColor" red="0.10980392156862745" green="0.19607843137254902" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet ex eu lorem maximus tristique. In suscipit…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjr-fN-Vj4">
-                                                                                    <rect key="frame" x="0.0" y="20" width="248" height="42"/>
+                                                                                    <rect key="frame" x="0.0" y="20.5" width="248" height="43"/>
                                                                                     <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="12"/>
                                                                                     <color key="textColor" red="0.47058823529411764" green="0.47450980392156861" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ask-a3-mjs">
-                                                                                    <rect key="frame" x="0.0" y="62" width="248" height="14"/>
+                                                                                    <rect key="frame" x="0.0" y="63.5" width="248" height="14.5"/>
                                                                                     <string key="text">10:00 AM — 10:30 AM
 </string>
                                                                                     <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
@@ -129,13 +172,16 @@
                                                                                 </label>
                                                                             </subviews>
                                                                         </stackView>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-1p-mAM">
-                                                                            <rect key="frame" x="264" y="6" width="64" height="64"/>
-                                                                            <color key="backgroundColor" red="0.1764705882352941" green="0.7803921568627451" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-1p-mAM">
+                                                                            <rect key="frame" x="264" y="7" width="64" height="64"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="64" id="UGD-gN-Kx3"/>
                                                                                 <constraint firstAttribute="height" constant="64" id="cDz-rb-6ZT"/>
                                                                             </constraints>
+                                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="circleView" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
                                                                         </button>
                                                                     </subviews>
                                                                     <constraints>
@@ -144,7 +190,7 @@
                                                                     </constraints>
                                                                 </stackView>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen" translatesAutoresizingMaskIntoConstraints="NO" id="TiJ-y8-GNr">
-                                                                    <rect key="frame" x="0.0" y="86" width="328" height="213.5"/>
+                                                                    <rect key="frame" x="0.0" y="88" width="328" height="211.5"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
@@ -164,11 +210,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="dataabel" destination="ask-a3-mjs" id="PF7-Gd-V6S"/>
+                                            <outlet property="dateLabel" destination="ask-a3-mjs" id="smj-p0-0pB"/>
                                             <outlet property="descriptionLabel" destination="cjr-fN-Vj4" id="Qip-tg-5EP"/>
                                             <outlet property="doneButton" destination="Qzg-1p-mAM" id="pNy-MW-D9f"/>
-                                            <outlet property="imageView" destination="TiJ-y8-GNr" id="2LB-br-gug"/>
                                             <outlet property="stateView" destination="hDd-f7-8zC" id="lTj-IW-Tdj"/>
+                                            <outlet property="taskImageView" destination="TiJ-y8-GNr" id="jqb-eL-HmI"/>
                                             <outlet property="titleLabel" destination="pp3-sg-Su8" id="o7s-QK-YLt"/>
                                         </connections>
                                     </tableViewCell>
@@ -243,7 +289,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2c7-LH-W5M" kind="relationship" relationship="rootViewController" id="5Nl-2J-oBe"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HbG-pP-6Jo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOJ-UR-7Mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -254,5 +300,6 @@
     <resources>
         <image name="Screen" width="345" height="210"/>
         <image name="fbLogin" width="297" height="60"/>
+        <image name="logo" width="194" height="246"/>
     </resources>
 </document>
