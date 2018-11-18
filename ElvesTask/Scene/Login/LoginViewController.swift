@@ -10,42 +10,38 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class LoginViewController: UIViewController {
-    fileprivate let viewModel: LoginViewModel
-    fileprivate let router: LoginRouter
-    fileprivate let disposeBag = DisposeBag()
+class LoginViewController: BaseViewController{
+    fileprivate var viewModel: LoginViewModel = LoginViewModel()
+    fileprivate var router: LoginRouter = LoginRouter()
 
     init(withViewModel viewModel: LoginViewModel, router: LoginRouter) {
+        super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
         self.router = router
-        super.init(nibName: nil, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupViews()
-        setupLayout()
-        setupRx()
+        viewModel = LoginViewModel()
+        router.viewController = self
+        setupRx(viewModel: viewModel)
     }
-}
-
-// MARK: Setup
-private extension LoginViewController {
-
-    func setupViews() {
+    @IBAction func loginWithFacebook(_ sender: UIButton) {
+        self.viewModel.login(vc: self)
+    }
+    
+    override func setupRx(viewModel: BaseViewModel) {
+        super.setupRx(viewModel: viewModel)
         
-    }
-
-    func setupLayout() {
-    
-    }
-
-    func setupRx() {
-    
+        self.viewModel.loginObservable.subscribe(onNext: { [weak self] canNavigate in
+            if canNavigate {
+            self?.router.navigateToTaskList()
+            }
+        }).disposed(by: self.disposeBag)
     }
 }

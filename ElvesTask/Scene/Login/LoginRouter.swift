@@ -11,7 +11,9 @@ import Foundation
 class LoginRouter {
     weak var viewController: LoginViewController?
 
-    func navigateToSomewhere() {
+    func navigateToTaskList() {
+           let taskListViewController = TaskListBuilder.viewController()
         
+        viewController?.navigationController?.pushViewController(taskListViewController, animated: true)
     }
 }
