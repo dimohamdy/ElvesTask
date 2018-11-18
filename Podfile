@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
+inhibit_all_warnings!
 
 def rxswift_pods
     pod 'RxSwift',    '~> 4.0'
@@ -14,14 +15,16 @@ target 'ElvesTask' do
 
   # Pods for ElvesTask
 
-  pod 'ALCameraViewController'
   rxswift_pods
-  pod 'NVActivityIndicatorView'
-  pod 'AlamofireImage'
-  pod 'SimpleImageViewer', '~> 1.1.1'
-  pod 'SwiftMessages'
+  pod 'SwiftMessages','6.0.1'
+  pod 'Alamofire','4.7.3'
   pod 'AlamofireNetworkActivityIndicator'
-  pod 'FBSDKLoginKit', '4.35'
+  pod 'AlamofireImage','3.4.1'
+  pod 'NVActivityIndicatorView'
+  pod 'FacebookCore','0.5.0'
+  pod 'FacebookLogin','0.5.0'
+  pod 'KeychainSwift','13.0.0'
+  pod 'PKHUD', '~> 5.0'
 
   target 'ElvesTaskTests' do
     inherit! :search_paths
@@ -31,8 +34,8 @@ target 'ElvesTask' do
   target 'ElvesTaskUITests' do
     inherit! :search_paths
     # Pods for testing
-  pod 'Quick'
-  pod 'Nimble'
+  pod 'Quick','1.3.2'
+  pod 'Nimble','7.3.1'
   end
 
 end
