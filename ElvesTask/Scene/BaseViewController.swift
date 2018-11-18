@@ -8,9 +8,13 @@
 
 import UIKit
 import PKHUD
+import RxSwift
+
 
 class BaseViewController: UIViewController {
 
+     var disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,7 @@ class BaseViewController: UIViewController {
         visible ? PKHUD.sharedHUD.show(onView: view) : PKHUD.sharedHUD.hide()
     }
     
+    
     func presentSingleButtonDialog(alert:SingleButtonAlert) {
         let alertController = UIAlertController(title: alert.title,
                                                 message: alert.message,
@@ -30,5 +35,29 @@ class BaseViewController: UIViewController {
                                                 style: .default,
                                                 handler: { _ in alert.action.handler?() }))
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func setupRx(viewModel:BaseViewModel) {
+        
+        
+        viewModel
+            .onShowError
+            .map { [weak self] in self?.presentSingleButtonDialog(alert: $0)}
+            .subscribe()
+            .disposed(by: disposeBag)
+        
+        viewModel
+            .onShowLoadingHud
+            .map { [weak self] in self?.setLoadingHud(visible: $0) }
+            .subscribe()
+            .disposed(by: disposeBag)
+        
+        
+        viewModel
+            .onShowError
+            .map { [weak self] in self?.presentSingleButtonDialog(alert: $0)}
+            .subscribe()
+            .disposed(by: disposeBag)
+
     }
 }
