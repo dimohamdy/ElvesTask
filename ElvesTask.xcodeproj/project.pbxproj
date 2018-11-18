@@ -20,6 +20,9 @@
 		3DBB5910219DF10C003CEA9E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB590F219DF10C003CEA9E /* Alert.swift */; };
 		3DBB5912219E79AB003CEA9E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB5911219E79AB003CEA9E /* BaseViewController.swift */; };
 		3DD5219C219FABA700C09CCF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5219B219FABA700C09CCF /* UIImageViewExtension.swift */; };
+		3DD5219E21A05D4800C09CCF /* ViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5219D21A05D4800C09CCF /* ViewBorder.swift */; };
+		3DD521A021A0715500C09CCF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5219F21A0715500C09CCF /* BaseViewModel.swift */; };
+		3DD521A221A0EC9A00C09CCF /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD521A121A0EC9A00C09CCF /* Storyboard.swift */; };
 		3DE3941C219B5D8D00124B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3941B219B5D8D00124B07 /* AppDelegate.swift */; };
 		3DE39421219B5D8D00124B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE3941F219B5D8D00124B07 /* Main.storyboard */; };
 		3DE39423219B5D8F00124B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE39422219B5D8F00124B07 /* Assets.xcassets */; };
@@ -72,6 +75,9 @@
 		3DBB590F219DF10C003CEA9E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		3DBB5911219E79AB003CEA9E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3DD5219B219FABA700C09CCF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		3DD5219D21A05D4800C09CCF /* ViewBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBorder.swift; sourceTree = "<group>"; };
+		3DD5219F21A0715500C09CCF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		3DD521A121A0EC9A00C09CCF /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		3DE39418219B5D8D00124B07 /* ElvesTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElvesTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE3941B219B5D8D00124B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE39420219B5D8D00124B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +172,8 @@
 				3D82BC45219CD32000300299 /* ReusableCellView.swift */,
 				3DBB590F219DF10C003CEA9E /* Alert.swift */,
 				3DD5219B219FABA700C09CCF /* UIImageViewExtension.swift */,
+				3DD5219D21A05D4800C09CCF /* ViewBorder.swift */,
+				3DD521A121A0EC9A00C09CCF /* Storyboard.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -199,12 +207,12 @@
 				3D82BC35219CA9F200300299 /* Fonts */,
 				3D82BC2E219BCE2100300299 /* Models */,
 				3DE3945C219B713000124B07 /* Manager */,
+				3DE39451219B6D1000124B07 /* Scene */,
 				3DE3941B219B5D8D00124B07 /* AppDelegate.swift */,
 				3DE3941F219B5D8D00124B07 /* Main.storyboard */,
 				3DE39422219B5D8F00124B07 /* Assets.xcassets */,
 				3DE39424219B5D8F00124B07 /* LaunchScreen.storyboard */,
 				3DE39427219B5D8F00124B07 /* Info.plist */,
-				3DE39451219B6D1000124B07 /* Scene */,
 			);
 			path = ElvesTask;
 			sourceTree = "<group>";
@@ -233,6 +241,7 @@
 				3DE39452219B6D2A00124B07 /* Login */,
 				3DE3945B219B6FE000124B07 /* TaskList */,
 				3DBB5911219E79AB003CEA9E /* BaseViewController.swift */,
+				3DD5219F21A0715500C09CCF /* BaseViewModel.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -559,6 +568,7 @@
 				3D82BC43219CD2C800300299 /* HeaderCell.swift in Sources */,
 				3D82BC34219C6D0F00300299 /* TasksManager.swift in Sources */,
 				3DBB5910219DF10C003CEA9E /* Alert.swift in Sources */,
+				3DD5219E21A05D4800C09CCF /* ViewBorder.swift in Sources */,
 				3DE39450219B6D0900124B07 /* LoginViewModel.swift in Sources */,
 				3DBB5912219E79AB003CEA9E /* BaseViewController.swift in Sources */,
 				3DE3944F219B6D0900124B07 /* LoginBuilder.swift in Sources */,
@@ -566,11 +576,13 @@
 				3D82BC31219BCE2100300299 /* TasksResult.swift in Sources */,
 				3D82BC32219BCE2100300299 /* Task.swift in Sources */,
 				3DE3941C219B5D8D00124B07 /* AppDelegate.swift in Sources */,
+				3DD521A221A0EC9A00C09CCF /* Storyboard.swift in Sources */,
 				3DE39459219B6E1500124B07 /* TaskListBuilder.swift in Sources */,
 				3D82BC41219CD2B700300299 /* TaskCell.swift in Sources */,
 				3DD5219C219FABA700C09CCF /* UIImageViewExtension.swift in Sources */,
 				3DE3945E219B718700124B07 /* LoginManager.swift in Sources */,
 				3DE39458219B6E1500124B07 /* TaskListViewController.swift in Sources */,
+				3DD521A021A0715500C09CCF /* BaseViewModel.swift in Sources */,
 				3DE3945A219B6E1500124B07 /* TaskListViewModel.swift in Sources */,
 				3DE3944D219B6D0900124B07 /* LoginRouter.swift in Sources */,
 				3DE39457219B6E1500124B07 /* TaskListRouter.swift in Sources */,
@@ -756,7 +768,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.ElvesTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovolve.iqraaly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -775,7 +787,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.ElvesTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovolve.iqraaly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
