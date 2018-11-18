@@ -11,11 +11,10 @@ import UIKit
 struct TaskListBuilder {
 
     static func viewController() -> UIViewController {
-        let viewModel = TaskListViewModel()
         let router = TaskListRouter()
-        let viewController = TaskListViewController(withViewModel: viewModel, router: router)
-        router.viewController = viewController
+        let viewController: TaskListViewController = TaskListViewController.instantiateFromStoryboard(.Main)
 
+        router.viewController = viewController
         return viewController
     }
 }

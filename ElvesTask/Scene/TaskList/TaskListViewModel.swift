@@ -14,33 +14,24 @@ enum TaskTableViewCellType {
     case empty
 }
 
-class TaskListViewModel {
+class TaskListViewModel : BaseViewModel{
 
+    
     // input
     var tasksCells: Observable<[TaskTableViewCellType]> {
         return cells.asObservable()
     }
-    var onShowLoadingHud: Observable<Bool> {
-        return loadInProgress
-            .asObservable()
-            .distinctUntilChanged()
-    }
-    
-    let onShowError = PublishSubject<SingleButtonAlert>()
-    let disposeBag = DisposeBag()
-    
-    private let loadInProgress = Variable(false)
+
     private let cells = Variable<[TaskTableViewCellType]>([])
-    // output
 
-    // internal
 
-    init() {
-        setupRx()
+    override init() {
+        super.init()
+        getFriends()
     }
     
     func getFriends() {
-        loadInProgress.value = true
+        self.loadInProgress.value = true
         
         TasksManagerClient
             .getTasks()
@@ -70,13 +61,5 @@ class TaskListViewModel {
                 }
             )
             .disposed(by: disposeBag)
-    }
-}
-
-// MARK: Setup
-private extension TaskListViewModel {
-
-    func setupRx() {
-
     }
 }

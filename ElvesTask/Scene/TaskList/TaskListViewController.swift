@@ -12,9 +12,8 @@ import RxCocoa
 import PKHUD
 
 class TaskListViewController: BaseViewController {
-    fileprivate let viewModel: TaskListViewModel
-    fileprivate let router: TaskListRouter
-    fileprivate let disposeBag = DisposeBag()
+    fileprivate var viewModel: TaskListViewModel = TaskListViewModel()
+    fileprivate var router: TaskListRouter = TaskListRouter()
     
     @IBOutlet weak var taskTableView: UITableView!
     init(withViewModel viewModel: TaskListViewModel, router: TaskListRouter) {
@@ -26,75 +25,20 @@ class TaskListViewController: BaseViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+//        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupViews()
-        setupLayout()
-        setupRx()
-    }
-}
-
-// MARK: Setup
-private extension TaskListViewController {
-    
-    func setupViews() {
+        setupRx(viewModel: viewModel)
         
     }
-    
-    func setupLayout() {
+    override func setupRx(viewModel: BaseViewModel){
+        super.setupRx(viewModel: viewModel)
         
-    }
-    
-    func setupRx() {
-        
-        
-        viewModel
-            .onShowError
-            .map { [weak self] in self?.presentSingleButtonDialog(alert: $0)}
-            .subscribe()
-            .disposed(by: disposeBag)
-        
-        viewModel
-            .onShowLoadingHud
-            .map { [weak self] in self?.setLoadingHud(visible: $0) }
-            .subscribe()
-            .disposed(by: disposeBag)
-        
-        
-        viewModel
-            .onShowError
-            .map { [weak self] in self?.presentSingleButtonDialog(alert: $0)}
-            .subscribe()
-            .disposed(by: disposeBag)
-        
-        viewModel
-            .onShowLoadingHud
-            .map { [weak self] in self?.setLoadingHud(visible: $0) }
-            .subscribe()
-            .disposed(by: disposeBag)
-        
-        viewModel
-            .onShowError
-            .map { [weak self] in self?.presentSingleButtonDialog(alert: $0)}
-            .subscribe()
-            .disposed(by: disposeBag)
-        
-        viewModel
-            .onShowLoadingHud
-            .map {
-                [weak self] in self?.setLoadingHud(visible: $0)
-            }
-            .subscribe()
-            .disposed(by: disposeBag)
-        
-    }
-    
-    func bindViewModel() {
-        viewModel.tasksCells.bind(to: self.taskTableView.rx.items) { tableView, index, element in
+        self.viewModel.tasksCells.bind(to: self.taskTableView.rx.items) { tableView, index, element in
             let indexPath = IndexPath(item: index, section: 0)
             switch element {
                 
@@ -121,8 +65,6 @@ private extension TaskListViewController {
                 cell.textLabel?.text = "No data available"
                 return cell
             }
-            }.disposed(by: disposeBag)
-        
+            }.disposed(by: self.disposeBag)
     }
-    
 }
