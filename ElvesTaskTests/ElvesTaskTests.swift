@@ -19,9 +19,28 @@ class ElvesTaskTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testDateToSting() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let dateStringBefoure = "2018-11-06T11:25:27+02:00"
+        
+        let date:Date = DateConverter.convertToDate(string: dateStringBefoure) ?? Date()
+        
+        let dateStringAfter =  DateConverter.convertToString(date: date)
+        XCTAssertEqual("Tue, 6 Nov 2018", dateStringAfter)
+    }
+    
+    
+    func testDateToDay() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let dateStringBefoure = "2018-11-06T11:25:27+02:00"
+        
+        let date:Date = DateConverter.convertToDate(string: dateStringBefoure) ?? Date()
+        
+        
+        let day =  DateConverter.getDayName(date: date)
+        XCTAssertEqual("Tuesday", day)
     }
 
     func testPerformanceExample() {

@@ -26,17 +26,17 @@ target 'ElvesTask' do
   pod 'KeychainSwift','13.0.0'
   pod 'PKHUD', '~> 5.0'
 
-  target 'ElvesTaskTests' do
+end
+
+
+target 'ElvesTaskUITests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Quick','1.3.2'
-    pod 'Nimble','7.3.1'
-  end
+    
+    end
 
-  target 'ElvesTaskUITests' do
+target 'ElvesTaskTests' do
     inherit! :search_paths
     # Pods for testing
-
-  end
-
+    rxswift_pods
 end
