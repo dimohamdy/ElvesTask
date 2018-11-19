@@ -48,11 +48,13 @@ class TaskListViewController: BaseViewController {
                 }
                 cell.task = cellViewModel
                 cell.viewModel = self?.viewModel
+                cell.selectionStyle = .none
                 return cell
             case .header(let title):
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCell.id, for: indexPath) as? HeaderCell else {
                     return UITableViewCell()
                 }
+                cell.selectionStyle = .none
                 cell.title = title
                 return cell
             case .error(let message):
