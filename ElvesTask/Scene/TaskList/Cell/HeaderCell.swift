@@ -16,7 +16,7 @@ class HeaderCell: UITableViewCell ,ReusableCellView {
 
     var title:String? = nil {
         didSet {
-            guard let string = title ,let date = DateConverter.convertToString(date: string) else {
+            guard let dateString = title ,let date = DateConverter.convertToDate(string: dateString) else {
                 return
             }
             dayNameLabel.text = DateConverter.getDayName(date: date)

@@ -84,7 +84,7 @@ final class TasksManagerClient {
                             if json?["completed"] == true{
                                 observer.onNext(true)
                             }else{
-                                observer.onNext(true)
+                                observer.onNext(false)
                                 
                             }
                             
