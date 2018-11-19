@@ -16,43 +16,18 @@ class HeaderCell: UITableViewCell ,ReusableCellView {
 
     var title:String? = nil {
         didSet {
-            guard let string = title ,let date = convertToString(date: string) else {
+            guard let string = title ,let date = DateConverter.convertToString(date: string) else {
                 return
             }
-            dayNameLabel.text = getDayName(date: date)
-            dateLabel.text = convertToString(date: date)
+            dayNameLabel.text = DateConverter.getDayName(date: date)
+            dateLabel.text = DateConverter.convertToString(date: date)
 
         }
         
     }
     
     
-    func convertToString(date:String) -> Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        let reuslt = dateFormatter.date(from: date) ?? nil
-        return reuslt
-        
-    }
 
-    func convertToString(date:Date) -> String {
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        dateFormatter.dateFormat = "E, d MMM yyyy"
-        
-        return dateFormatter.string(from: date)
-    }
-    
-    
-    func getDayName(date:Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE"
-        return formatter.string(from: date)
-    }
     
     
 

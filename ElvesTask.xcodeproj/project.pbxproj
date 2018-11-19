@@ -24,6 +24,7 @@
 		3DD521A021A0715500C09CCF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5219F21A0715500C09CCF /* BaseViewModel.swift */; };
 		3DD521A221A0EC9A00C09CCF /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD521A121A0EC9A00C09CCF /* Storyboard.swift */; };
 		3DD521A421A24C8A00C09CCF /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD521A321A24C8A00C09CCF /* ServerManager.swift */; };
+		3DD521A621A277F700C09CCF /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD521A521A277F700C09CCF /* DateConverter.swift */; };
 		3DE3941C219B5D8D00124B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3941B219B5D8D00124B07 /* AppDelegate.swift */; };
 		3DE39421219B5D8D00124B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE3941F219B5D8D00124B07 /* Main.storyboard */; };
 		3DE39423219B5D8F00124B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE39422219B5D8F00124B07 /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		3DD5219F21A0715500C09CCF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		3DD521A121A0EC9A00C09CCF /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		3DD521A321A24C8A00C09CCF /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServerManager.swift; path = ElvesTask/ServerManager.swift; sourceTree = SOURCE_ROOT; };
+		3DD521A521A277F700C09CCF /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		3DE39418219B5D8D00124B07 /* ElvesTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElvesTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE3941B219B5D8D00124B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE39420219B5D8D00124B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				3DD5219B219FABA700C09CCF /* UIImageViewExtension.swift */,
 				3DD5219D21A05D4800C09CCF /* ViewBorder.swift */,
 				3DD521A121A0EC9A00C09CCF /* Storyboard.swift */,
+				3DD521A521A277F700C09CCF /* DateConverter.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 				3D82BC32219BCE2100300299 /* Task.swift in Sources */,
 				3DE3941C219B5D8D00124B07 /* AppDelegate.swift in Sources */,
 				3DD521A221A0EC9A00C09CCF /* Storyboard.swift in Sources */,
+				3DD521A621A277F700C09CCF /* DateConverter.swift in Sources */,
 				3DE39459219B6E1500124B07 /* TaskListBuilder.swift in Sources */,
 				3D82BC41219CD2B700300299 /* TaskCell.swift in Sources */,
 				3DD5219C219FABA700C09CCF /* UIImageViewExtension.swift in Sources */,
